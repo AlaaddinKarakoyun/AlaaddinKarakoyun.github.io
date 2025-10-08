@@ -14,7 +14,7 @@ This website serves as a simple portfolio for current and future projects.
 
 ---
 
-## 🧩 Projects
+## Projects
 
 Current projects include:
 
@@ -26,21 +26,4 @@ Each project will later have its own dedicated page with descriptions, screensho
 
 ---
 
-## 🧑‍💻 Tech Stack
 
-- **React** (Frontend)
-- **Tailwind CSS** (Styling)
-- **Framer Motion** (Animations)
-- **Vite** or **Create React App** (for development)
-
----
-
-## 📦 Setup
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/<your-username>/nizamtech.git
-cd nizamtech
-npm install
-npm run dev   # or npm start
