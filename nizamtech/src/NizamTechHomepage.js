@@ -27,6 +27,12 @@ export default function NizamTechHomepage() {
         "This project is specifically for switzerland. More infos will be coming soon.",
       tags: ["Alaaddin Karakoyun", "Anonym", "Anonym"],
     },
+    {
+      title: "More projects",
+      summary:
+        "More projects have been made. Unfortunately, those weren't as professional, so we wouldn't backup those and they would be gone forever.",
+      tags: ["Alaaddin Karakoyun", "easy 3D Game with Unity", "React Portfolio project in School", "Windows Forms project for swisskills at gbs"],
+    },
   ];
 
   return (
