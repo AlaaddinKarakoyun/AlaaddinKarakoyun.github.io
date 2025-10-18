@@ -13,25 +13,31 @@ export default function NizamTechHomepage() {
       title: "BabaOrder - Solution for a community in St. Gallen",
       summary:
         "BabaOrder is a solution which is still being developed. BabaOrder will make the catering in a community easier.",
-      tags: ["Alaaddin Karakoyun"],
+      tags: ["Alaaddin Karakoyun", "C#", "Blazor", "ASP.NET", "MSSQL"],
     },
     {
       title: "Java 2D-Game",
       summary:
-        "A 2D Game with Java from Scratch.",
-      tags: ["Alaaddin Karakoyun"],
+        "A 2D Game with Java. The game needs few fixes like player-character, collisions and ingame goals and will be released soon.",
+      tags: ["Alaaddin Karakoyun", "Java", "JPanel", "needs fixing"],
     },
     {
       title: "GreenFahren.ch",
       summary:
         "This project is specifically for switzerland. More infos will be coming soon.",
-      tags: ["Alaaddin Karakoyun", "Anonym", "Anonym"],
+      tags: ["Alaaddin Karakoyun", "2 anonym friends", "React", "Spring Boot"],
+    },
+    {
+      title: "C# Console-Quiz-App ",
+      summary:
+        "A simple quiz-app with questions from a JSON-File.",
+      tags: ["Alaaddin Karakoyun", "C#", ".NET", "Json"],
     },
     {
       title: "More projects",
       summary:
         "More projects have been made. Unfortunately, those weren't as professional, so we wouldn't backup those and they would be gone forever.",
-      tags: ["Alaaddin Karakoyun", "easy 3D Game with Unity", "React Portfolio project in School", "Windows Forms project for swisskills at gbs"],
+      tags: ["Alaaddin Karakoyun", "simple 3D Game with Unity", "React Portfolio project in School"],
     },
   ];
 
@@ -129,23 +135,49 @@ export default function NizamTechHomepage() {
               </div>
             </div>
 
-            <form className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 shadow-lg" onSubmit={(e) => { e.preventDefault(); alert('Danke! Formular abgeschickt.'); }}>
+            <form
+              action="https://formspree.io/f/xwprylnk"
+              method="POST"
+              className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 shadow-lg"
+            >
               <label className="block">
                 <span className="text-sm text-gray-300">Name</span>
-                <input required className="mt-2 block w-full rounded-md bg-zinc-800 border border-zinc-700 px-3 py-2 text-gray-100" placeholder="Your name" />
+                <input
+                  name="name"
+                  required
+                  className="mt-2 block w-full rounded-md bg-zinc-800 border border-zinc-700 px-3 py-2 text-gray-100"
+                  placeholder="Your name"
+                />
               </label>
 
               <label className="block mt-4">
                 <span className="text-sm text-gray-300">E-Mail</span>
-                <input type="email" required className="mt-2 block w-full rounded-md bg-zinc-800 border border-zinc-700 px-3 py-2 text-gray-100" placeholder="name@domain.com" />
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="mt-2 block w-full rounded-md bg-zinc-800 border border-zinc-700 px-3 py-2 text-gray-100"
+                  placeholder="name@domain.com"
+                />
               </label>
 
               <label className="block mt-4">
                 <span className="text-sm text-gray-300">Message</span>
-                <textarea required className="mt-2 block w-full rounded-md bg-zinc-800 border border-zinc-700 px-3 py-2 text-gray-100" rows={4} placeholder="Your message"></textarea>
+                <textarea
+                  name="message"
+                  required
+                  className="mt-2 block w-full rounded-md bg-zinc-800 border border-zinc-700 px-3 py-2 text-gray-100"
+                  rows={4}
+                  placeholder="Your message"
+                ></textarea>
               </label>
 
-              <button type="submit" className="mt-6 w-full px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-md text-white font-medium hover:opacity-90 transition">Send</button>
+              <button
+                type="submit"
+                className="mt-6 w-full px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-md text-white font-medium hover:opacity-90 transition"
+              >
+                Send
+              </button>
             </form>
           </div>
         </section>
@@ -155,7 +187,7 @@ export default function NizamTechHomepage() {
 
       <footer className="border-t border-zinc-800 bg-black py-8">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 gap-4">
-          <div>© {new Date().getFullYear()} NizamTech — All rights reserved</div>
+          <div>© {new Date().getFullYear()} NizamTech — Everything in a order</div>
           <div className="flex gap-4">
             
           </div>
